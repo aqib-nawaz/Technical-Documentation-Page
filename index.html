@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>CSS Documentation</header>
+      <ul>
+        <li><a href="#introduction" class="nav-link">Introduction</a></li>
+        <li><a href="#what_is_css_for" class="nav-link">What is CSS for</a></li>
+        <li><a href="#prerequisites" class="nav-link">Prerequisites</a></li>
+        <li><a href="#modules" class="nav-link">Modules</a></li>
+        <li><a href="#css_syntax" class="nav-link">CSS Syntax</a></li>
+        <li><a href="#applying_css_to_html" class="nav-link">Applying CSS to HTML</a></li>
+        <li><a href="#how_css_works" class="nav-link">How CSS works</a></li>
+        <li><a href="#solving_common_css_problems" class="nav-link">Solving common CSS problems</a></li>
+        <li><a href="#key_resources" class="nav-link">Key Resources</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <article>
+          <p>CSS is the language we use to style a Web page.</p>
+          <ul>
+            <li>CSS stands for Cascading Style Sheets</li>
+            <li>
+              CSS describes how HTML elements are to be displayed on screen,
+              paper, or in other media
+            </li>
+            <li>
+              CSS saves a lot of work. It can control the layout of multiple web
+              pages all at once
+            </li>
+            <li>External stylesheets are stored in CSS files</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="what_is_css_for">
+        <header>What is CSS for</header>
+        <article>
+          <p>As we have mentioned before, CSS is a language for specifying how documents are presented to users — how they are styled, laid out, etc.</p>
+          <p>A document is usually a text file structured using a markup language — HTML is the most common markup language, but you may also come across 
+            other markup languages such as SVG or XML</p>
+          <p>Presenting a document to a user means converting it into a form usable by your audience. Browsers, like Firefox, Chrome, or Edge , are designed to present documents visually, 
+            for example, on a computer screen, projector or printer.
+          </p>
+          <p>CSS can be used for very basic document text styling — for example changing the color
+            and size of headings and links. It can be used to create layout — for example turning a single column of text into a layout
+            with a main content area and a sidebar for related information. It can even be used for effects such as animation.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="prerequisites">
+        <header>Prerequisites</header>
+        <article>
+          <p>
+            You should learn the basics of HTML before attempting any CSS. We
+            recommend that you work through our Introduction to HTML module first.
+          </p>
+          <p>
+            Once you understand the fundamentals of HTML, we recommend that you
+            learn further HTML and CSS at the same time, moving back and forth
+            between the two topics. This is because HTML is far more interesting
+            and much more fun to learn when you apply CSS, and you can't really
+            learn CSS without knowing HTML.
+          </p>
+          <p>Before starting this topic, you should
+            also be familiar with using computers and using the web passively
+            (i.e., just looking at it, consuming the content). You should have a
+            basic work environment set up as detailed in Installing basic software
+            and understand how to create and manage files
+          </p>
+        </article>
+      </section>
+
+
+      <section class="main-section" id="modules">
+        <header>Modules</header>
+        <article>
+          <dl>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps">CSS first steps</a></dt>
+            <dd>
+              <p>
+                CSS (Cascading Style Sheets) is used to style and lay out web pages — for example,
+                to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. 
+                This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works,
+                what the syntax looks like, and how you can start using it to add styling to HTML
+              </p>
+            </dd>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks">CSS building blocks</a></dt>
+            <dd>
+              <p>This module carries on where CSS first steps left off — now you've
+                gained familiarity with the language and its syntax, and got some basic 
+                experience with using it, its time to dive a bit deeper. This module looks at the cascade and inheritance, all the selector types we have 
+                available, units, sizing, styling backgrounds and borders, debugging, and lots more.
+              </p>
+              <p>The aim here is to provide you with a toolkit for writing competent CSS and help you understand all the essential theory, before moving on to more specific 
+                disciplines like text styling and CSS layout.
+              </p>
+            </dd>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text">Styling text</a></dt>
+            <dd>
+              <p> With the basics of the CSS language covered, the next CSS topic for you to concentrate on is styling text — one of 
+                the most common things you'll do with CSS. Here we look at text styling fundamentals, including 
+                setting font, boldness, italics, line and letter spacing, drop shadows and other text features. We round off 
+                the module by looking at applying custom fonts to your page, and styling lists and links.
+               </p>
+            </dd>
+            <dt><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout">CSS layout</a></dt>
+            <dd>
+              <p> At this point we've already looked at CSS fundamentals, how to style text, 
+                and how to style and manipulate the boxes that your content sits inside. 
+                Now it's time to look at how to place your boxes in the right place in relation to 
+                the viewport, and one another. We have covered the necessary prerequisites so we can 
+                now dive deep into CSS layout, looking at different display settings, modern layout tools like flexbox, CSS grid, 
+                and positioning, and some of the legacy techniques you might still want to know abou
+              </p>
+            </dd>
+          </dl>
+        </article>
+      </section>
+
+      <section class="main-section" id="css_syntax">
+        <header>CSS Syntax</header>
+        <article>
+          <p> A CSS rule consists of 
+            <ul>
+              <li>Selector</li>
+              <li>Declaration Bock</li>
+            </ul>
+          </p>
+          <h3>Example</h3>
+          <p>In this example all <p> elements will be center-aligned, with a red text color</p>
+          <pre>
+            <code>
+              p {
+                color: red;
+                text-align: center;
+              }
+            </code>
+          </pre>
+          <p><strong>Example Explained</strong>
+            <ul>
+              <li><code>p</code> is a selector in CSS (it points to the HTML element you want to style: &lt;p&gt;).</li>
+              <li><code>color</code> is a property, and <code>red</code> is the property value</li>
+              <li><code>text-align</code> is a property, and <code>center</code> is the property value</li>
+            </ul>
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="applying_css_to_html">
+        <header>Applying CSS to HTML</header>
+        <article>
+          <p>There are 3 ways to Apply CSS to HTML:
+            <ul>
+              <li>External </li>
+              <li>Internal</li>
+              <li>Inline</li>
+            </ul>
+          </p>
+          <h2>External CSS</h2>
+          <p>
+            With an external style sheet, you can change the look of an entire 
+            website by changing just one file!
+          </p> 
+          <p>Each HTML page must include a reference to the external style 
+            sheet file inside the &lt;link&gt; element, inside the head section.
+          </p>
+          <h3>Example</h3>
+          <p>External styles are defined within the &lt;link&gt; element, inside the &lt;head&gt; section of an HTML page:</p>
+          <pre>
+            <code>
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;link rel="stylesheet" href="mystyle.css"&gt;
+                &lt;/head&gt;
+              &lt;body&gt;
+                  &lt;h1&gt;This is a heading&lt;/h1&gt;
+                  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+              &lt;/body&gt;
+              &lt;/html&gt;
+            </code>
+          </pre>
+          <p>An external style sheet can be written in any text editor, and must be saved with a .css extension. <br>
+            The external .css file should not contain any HTML tags.</p>
+          <h2>Internal CSS</h2>
+          <p>
+            An internal style sheet may be used if one single HTML page has a unique style.
+          </p> 
+          <p>
+            The internal style is defined inside the &lt;style&gt; element, inside the head section.
+          </p>
+          <h3>Example</h3>
+          <p>Internal styles are defined within the &lt;style&gt; element, inside the &lt;head&gt; section of an HTML page:</p>
+          <pre>
+          <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;style&gt;
+                  body {
+                    background-color: linen;
+                  }
+                  h1 {
+                    color: maroon;
+                    margin-left: 40px;
+                  }
+                &lt;/style&gt;
+              &lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1>This is a heading&lt;/h1&gt;
+              &lt;p>This is a paragraph.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+           </code>
+          </pre>
+
+          <h2>Inline Style</h2>
+          <p>An inline style may be used to apply a unique style for a single element.</p>
+          <p>To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p>
+          <h3>Examle</h3>
+          <p>Inline styles are defined within the "style" attribute of the relevant element:</p>
+          <pre>
+           <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;body&gt;
+              &lt;h1 style="color:blue;text-align:center;"&gt;This is a heading&lt;/h1&gt;
+              &lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+           </code>
+          </pre>
+        </article>
+      </section>
+
+      <section class="main-section" id="how_css_works">
+        <header>How CSS works</header>
+        <article>
+          <p>We have learned the basics of CSS, what it is for and how to write simple stylesheets. In this lesson we will take a look at how a
+            browser takes CSS and HTML and turns that into a webpage.
+          </p>
+          <h2>How does CSS actually work?</h2>
+          <p>
+            When a browser displays a document, it must combine the document's content with its
+            style information. It processes the document in a number of stages, which we've 
+            listed below. Bear in mind that this is a very simplified version of what happens 
+            when a browser loads a webpage, and that different browsers will handle the process in different ways. But this is roughly what happens.
+          </p>
+          <ol>
+            <li>The browser loads the HTML (e.g. receives it from the network).</li>
+            <li>It converts the HTML into a DOM (Document Object Model). The DOM represents the document in the computer's memory.
+              The DOM is explained in a bit more detail in the next section.
+            </li>
+            <li>The browser then fetches most of the resources that are linked to by the HTML 
+              document, such as embedded images and videos ... and linked CSS! JavaScript is handled 
+              bit later on in the process, and we won't talk about it here to keep things simpler.</li>
+            <li>The browser parses the fetched CSS, and sorts the different rules by their selector types into different "buckets", 
+              e.g. element, class, ID, and so on. Based on the selectors it finds, it works out which rules should be applied to which nodes in the DOM, 
+              and attaches style to them as required (this intermediate step is called a render tree).</li>
+            <li>The render tree is laid out in the structure it should appear in after the rules have been applied to it.</li>
+            <li>The visual display of the page is shown on the screen (this stage is called painting).</li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="main-section" id="solving_common_css_problems">
+        <header>Solving common CSS problems</header>
+        <article>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto">Use CSS to solve common problems </a>
+            provides links to sections of content explaining how to use CSS to solve very common problems when creating a web page.
+          </p>
+          <p>
+            From the beginning, you'll primarily apply colors to HTML elements and their backgrounds; change the size, shape, 
+            and position of elements; and add and define borders on elements. 
+            But there's not much you can't do once you have a solid understanding of even the basics of CSS. 
+            One of the best things about learning CSS is that once you know the fundamentals, usually you have a pretty good 
+            feel for what can and can't be done, even if you don't actually know how to do it yet!
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="key_resources">
+        <header>Key Resources</header>
+        <article>
+          <p>
+            <dl>
+              <dt>CSS Introduction</dt>
+              <dd>If you're new to web development, be sure to read our <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">CSS basics </a> article to learn what CSS is and how to use it.</dd>
+              <dt>CSS Tutorials</dt>
+              <dd>Our <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">CSS learning area</a> contains a wealth of tutorials to take you from beginner level to proficiency, covering all the fundamentals.</dd>
+              <dt>CSS Reference</dt>
+              <dd>Our <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">exhaustive CSS reference </a>  for seasoned Web developers describes every property and concept of CSS.</dd>
+            </dl>
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

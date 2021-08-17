@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap");
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+li {
+  list-style-position: inside;
+}
+a {
+  display: block;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+header {
+  font-family: "Montserrat", sans-serif;
+  color: #086b31;
+  margin: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+#navbar ul {
+  height: 80%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+#navbar ul li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  position: relative;
+  width: 100%;
+  list-style-type: none;
+}
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #086b31;
+  text-decoration: none;
+  cursor: pointer;
+}
+#navbar a:hover{
+    background-color: #ffe600;
+}
+.main-section {
+  margin-bottom: 40px;
+  line-height: 26px;
+}
+#main-doc {
+  position: absolute;
+  margin-left: 315px;
+  padding: 20px;
+  margin-bottom: 165px;
+}
+#main-doc header {
+  text-align: left;
+  margin: 10px 0 20px 0;
+  color: #086b31;
+}
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+section li{
+    margin: 15px 0px 0px 20px;
+}
+
+dt,h2,h3{
+    margin: 13px 0;
+}
+dt a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #8700b18c;
+}
+dt a:hover{
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+code{
+    display: inline-block;
+    position: relative;
+    background-color: #ffebc08c;
+    padding: 4px;
+    
+}
+pre code {
+    display: block;
+    text-align: left;
+    white-space:pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #ffe6af56;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  #footer{
+      width: 100%;
+      position: absolute;
+      z-index:2;
+      left: 0px;
+      top:100vh;
+
+  }
+  @media only screen and (max-width:815px){
+    #navbar ul{
+        max-height:270px;
+
+    }
+    #navbar{
+        height: 300px;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        border-bottom: 2px solid rgba(0, 22, 22, 0.4);
+        z-index: 1;
+    }
+    #main-doc{
+        margin-left: 0px;
+        width: 95%;
+        margin-top: 20px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    #main-doc {
+      
+      width: 100%;
+    }
+  
+   code {
+      margin-left: -30px;
+      width: 100%;
+      padding: 10px;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+    }
+  }
